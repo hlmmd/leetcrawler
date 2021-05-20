@@ -1,0 +1,75 @@
+{
+    "data": {
+        "question": {
+            "questionId": "626",
+            "questionFrontendId": "626",
+            "boundTopicId": null,
+            "title": "Exchange Seats",
+            "titleSlug": "exchange-seats",
+            "content": "<p>Mary is a teacher in a middle school and she has a table <code>seat</code> storing students&#39; names and their corresponding seat ids.</p>\n\n<p>The column <b>id</b> is continuous increment.</p>\n\n<p>Mary wants to change seats for the adjacent students.</p>\n\n<p>Can you write a SQL query to output the result for Mary?</p>\n\n<p>&nbsp;</p>\n\n<pre>\n+---------+---------+\n|    id   | student |\n+---------+---------+\n|    1    | Abbot   |\n|    2    | Doris   |\n|    3    | Emerson |\n|    4    | Green   |\n|    5    | Jeames  |\n+---------+---------+\n</pre>\n\n<p>For the sample input, the output is:</p>\n\n<pre>\n+---------+---------+\n|    id   | student |\n+---------+---------+\n|    1    | Doris   |\n|    2    | Abbot   |\n|    3    | Green   |\n|    4    | Emerson |\n|    5    | Jeames  |\n+---------+---------+\n</pre>\n\n<p><b>Note:</b></p>\n\n<p>If the number of students is odd, there is no need to change the last one&#39;s seat.</p>\n",
+            "translatedTitle": null,
+            "translatedContent": null,
+            "isPaidOnly": false,
+            "difficulty": "Medium",
+            "likes": 453,
+            "dislikes": 303,
+            "isLiked": null,
+            "similarQuestions": "[]",
+            "exampleTestcases": "{\"headers\": {\"seat\": [\"id\",\"student\"]}, \"rows\": {\"seat\": [[1,\"Abbot\"],[2,\"Doris\"],[3,\"Emerson\"],[4,\"Green\"],[5,\"Jeames\"]]}}",
+            "contributors": [],
+            "topicTags": [],
+            "companyTagStats": null,
+            "codeSnippets": [
+                {
+                    "lang": "MySQL",
+                    "langSlug": "mysql",
+                    "code": "# Write your MySQL query statement below\n",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "MS SQL Server",
+                    "langSlug": "mssql",
+                    "code": "/* Write your T-SQL query statement below */\n",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Oracle",
+                    "langSlug": "oraclesql",
+                    "code": "/* Write your PL/SQL query statement below */\n",
+                    "__typename": "CodeSnippetNode"
+                }
+            ],
+            "stats": "{\"totalAccepted\": \"72.7K\", \"totalSubmission\": \"109.1K\", \"totalAcceptedRaw\": 72663, \"totalSubmissionRaw\": 109061, \"acRate\": \"66.6%\"}",
+            "hints": [],
+            "solution": {
+                "id": "195",
+                "canSeeDetail": true,
+                "paidOnly": false,
+                "hasVideoSolution": false,
+                "paidOnlyVideo": true,
+                "__typename": "ArticleNode"
+            },
+            "status": null,
+            "sampleTestCase": "{\"headers\": {\"seat\": [\"id\",\"student\"]}, \"rows\": {\"seat\": [[1,\"Abbot\"],[2,\"Doris\"],[3,\"Emerson\"],[4,\"Green\"],[5,\"Jeames\"]]}}",
+            "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists seat(id int, student varchar(255))\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table seat(id int, student varchar(255))\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table seat(id int, student varchar(255))\"\r\n  ],\r\n  \"database\": true\r\n}",
+            "judgerAvailable": true,
+            "judgeType": "large",
+            "mysqlSchemas": [
+                "Create table If Not Exists seat(id int, student varchar(255))",
+                "Truncate table seat",
+                "insert into seat (id, student) values ('1', 'Abbot')",
+                "insert into seat (id, student) values ('2', 'Doris')",
+                "insert into seat (id, student) values ('3', 'Emerson')",
+                "insert into seat (id, student) values ('4', 'Green')",
+                "insert into seat (id, student) values ('5', 'Jeames')"
+            ],
+            "enableRunCode": true,
+            "enableTestMode": false,
+            "enableDebugger": false,
+            "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+            "libraryUrl": null,
+            "adminUrl": null,
+            "__typename": "QuestionNode"
+        }
+    }
+}

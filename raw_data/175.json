@@ -1,0 +1,74 @@
+{
+    "data": {
+        "question": {
+            "questionId": "175",
+            "questionFrontendId": "175",
+            "boundTopicId": null,
+            "title": "Combine Two Tables",
+            "titleSlug": "combine-two-tables",
+            "content": "<p>Table: <code>Person</code></p>\r\n\r\n<pre>\r\n+-------------+---------+\r\n| Column Name | Type    |\r\n+-------------+---------+\r\n| PersonId    | int     |\r\n| FirstName   | varchar |\r\n| LastName    | varchar |\r\n+-------------+---------+\r\nPersonId is the primary key column for this table.\r\n</pre>\r\n\r\n<p>Table: <code>Address</code></p>\r\n\r\n<pre>\r\n+-------------+---------+\r\n| Column Name | Type    |\r\n+-------------+---------+\r\n| AddressId   | int     |\r\n| PersonId    | int     |\r\n| City        | varchar |\r\n| State       | varchar |\r\n+-------------+---------+\r\nAddressId is the primary key column for this table.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:</p>\r\n\r\n<pre>\r\nFirstName, LastName, City, State\r\n</pre>\r\n",
+            "translatedTitle": null,
+            "translatedContent": null,
+            "isPaidOnly": false,
+            "difficulty": "Easy",
+            "likes": 1220,
+            "dislikes": 158,
+            "isLiked": null,
+            "similarQuestions": "[{\"title\": \"Employee Bonus\", \"titleSlug\": \"employee-bonus\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+            "exampleTestcases": "{\"headers\": {\"Person\": [\"PersonId\", \"LastName\", \"FirstName\"], \"Address\": [\"AddressId\", \"PersonId\", \"City\", \"State\"]}, \"rows\": {\"Person\": [[1, \"Wang\", \"Allen\"]], \"Address\": [[1, 2, \"New York City\", \"New York\"]]}}",
+            "contributors": [],
+            "topicTags": [],
+            "companyTagStats": null,
+            "codeSnippets": [
+                {
+                    "lang": "MySQL",
+                    "langSlug": "mysql",
+                    "code": "# Write your MySQL query statement below\n",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "MS SQL Server",
+                    "langSlug": "mssql",
+                    "code": "/* Write your T-SQL query statement below */\n",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Oracle",
+                    "langSlug": "oraclesql",
+                    "code": "/* Write your PL/SQL query statement below */\n",
+                    "__typename": "CodeSnippetNode"
+                }
+            ],
+            "stats": "{\"totalAccepted\": \"370.9K\", \"totalSubmission\": \"568K\", \"totalAcceptedRaw\": 370877, \"totalSubmissionRaw\": 568006, \"acRate\": \"65.3%\"}",
+            "hints": [],
+            "solution": {
+                "id": "206",
+                "canSeeDetail": true,
+                "paidOnly": false,
+                "hasVideoSolution": false,
+                "paidOnlyVideo": true,
+                "__typename": "ArticleNode"
+            },
+            "status": null,
+            "sampleTestCase": "{\"headers\": {\"Person\": [\"PersonId\", \"LastName\", \"FirstName\"], \"Address\": [\"AddressId\", \"PersonId\", \"City\", \"State\"]}, \"rows\": {\"Person\": [[1, \"Wang\", \"Allen\"]], \"Address\": [[1, 2, \"New York City\", \"New York\"]]}}",
+            "metaData": "{\n  \"mysql\": [\n    \"Create table Person (PersonId int, FirstName varchar(255), LastName varchar(255))\",\n    \"Create table Address (AddressId int, PersonId int, City varchar(255), State varchar(255))\"\n  ],\n  \"mssql\": [\n    \"create table Person ( PersonId int, FirstName varchar(255), LastName varchar(255) )\",\n    \"create table Address ( AddressId int, PersonId int, City varchar(255), State varchar(255) )\"\n  ],\n  \"oraclesql\": [\n    \"create table Person ( PersonId int, FirstName varchar(255), LastName varchar(255) )\",\n    \"create table Address ( AddressId int, PersonId int, City varchar(255), State varchar(255) )\"\n  ],\n  \"database\": true,\n  \"manual\": false\n}",
+            "judgerAvailable": true,
+            "judgeType": "large",
+            "mysqlSchemas": [
+                "Create table Person (PersonId int, FirstName varchar(255), LastName varchar(255))",
+                "Create table Address (AddressId int, PersonId int, City varchar(255), State varchar(255))",
+                "Truncate table Person",
+                "insert into Person (PersonId, LastName, FirstName) values ('1', 'Wang', 'Allen')",
+                "Truncate table Address",
+                "insert into Address (AddressId, PersonId, City, State) values ('1', '2', 'New York City', 'New York')"
+            ],
+            "enableRunCode": true,
+            "enableTestMode": false,
+            "enableDebugger": false,
+            "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+            "libraryUrl": null,
+            "adminUrl": null,
+            "__typename": "QuestionNode"
+        }
+    }
+}

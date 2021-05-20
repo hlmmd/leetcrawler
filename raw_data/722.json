@@ -1,0 +1,147 @@
+{
+    "data": {
+        "question": {
+            "questionId": "722",
+            "questionFrontendId": "722",
+            "boundTopicId": null,
+            "title": "Remove Comments",
+            "titleSlug": "remove-comments",
+            "content": "<p>Given a C++ program, remove comments from it. The program <code>source</code> is an array where <code>source[i]</code> is the <code>i</code>-th line of the source code.  This represents the result of splitting the original source code string by the newline character <code>\\n</code>.</p>\r\n\r\n<p>In C++, there are two types of comments, line comments, and block comments.</p>\r\n<p>\r\nThe string <code>//</code> denotes a line comment, which represents that it and rest of the characters to the right of it in the same line should be ignored.\r\n</p><p>\r\nThe string <code>/*</code> denotes a block comment, which represents that all characters until the next (non-overlapping) occurrence of <code>*/</code> should be ignored.  (Here, occurrences happen in reading order: line by line from left to right.)  To be clear, the string <code>/*/</code> does not yet end the block comment, as the ending would be overlapping the beginning.\r\n</p><p>\r\nThe first effective comment takes precedence over others: if the string <code>//</code> occurs in a block comment, it is ignored. Similarly, if the string <code>/*</code> occurs in a line or block comment, it is also ignored.\r\n</p><p>\r\nIf a certain line of code is empty after removing comments, you must not output that line: each string in the answer list will be non-empty.\r\n</p><p>\r\nThere will be no control characters, single quote, or double quote characters.  For example, <code>source = \"string s = \"/* Not a comment. */\";\"</code> will not be a test case.  (Also, nothing else such as defines or macros will interfere with the comments.)\r\n</p><p>\r\nIt is guaranteed that every open block comment will eventually be closed, so <code>/*</code> outside of a line or block comment always starts a new comment.\r\n</p><p>\r\nFinally, implicit newline characters can be deleted by block comments.  Please see the examples below for details.\r\n</p>\r\n\r\n<p>After removing the comments from the source code, return the source code in the same format.</p>\r\n\r\n<p><b>Example 1:</b><br />\r\n<pre style=\"white-space: pre-wrap\">\r\n<b>Input:</b> \r\nsource = [\"/*Test program */\", \"int main()\", \"{ \", \"  // variable declaration \", \"int a, b, c;\", \"/* This is a test\", \"   multiline  \", \"   comment for \", \"   testing */\", \"a = b + c;\", \"}\"]\r\n\r\nThe line by line code is visualized as below:\r\n/*Test program */\r\nint main()\r\n{ \r\n  // variable declaration \r\nint a, b, c;\r\n/* This is a test\r\n   multiline  \r\n   comment for \r\n   testing */\r\na = b + c;\r\n}\r\n\r\n<b>Output:</b> [\"int main()\",\"{ \",\"  \",\"int a, b, c;\",\"a = b + c;\",\"}\"]\r\n\r\nThe line by line code is visualized as below:\r\nint main()\r\n{ \r\n  \r\nint a, b, c;\r\na = b + c;\r\n}\r\n\r\n<b>Explanation:</b> \r\nThe string <code>/*</code> denotes a block comment, including line 1 and lines 6-9. The string <code>//</code> denotes line 4 as comments.\r\n</pre>\r\n</p>\r\n\r\n<p><b>Example 2:</b><br />\r\n<pre style=\"white-space: pre-wrap\">\r\n<b>Input:</b> \r\nsource = [\"a/*comment\", \"line\", \"more_comment*/b\"]\r\n<b>Output:</b> [\"ab\"]\r\n<b>Explanation:</b> The original source string is \"a/*comment<b>\\n</b>line<b>\\n</b>more_comment*/b\", where we have bolded the newline characters.  After deletion, the <i>implicit</i> newline characters are deleted, leaving the string \"ab\", which when delimited by newline characters becomes [\"ab\"].\r\n</pre>\r\n</p>\r\n\r\n<p><b>Note:</b>\r\n<li>The length of <code>source</code> is in the range <code>[1, 100]</code>.</li>\r\n<li>The length of <code>source[i]</code> is in the range <code>[0, 80]</code>.</li>\r\n<li>Every open block comment is eventually closed.</li>\r\n<li>There are no single-quote, double-quote, or control characters in the source code.</li>\r\n</p>",
+            "translatedTitle": null,
+            "translatedContent": null,
+            "isPaidOnly": false,
+            "difficulty": "Medium",
+            "likes": 469,
+            "dislikes": 1237,
+            "isLiked": null,
+            "similarQuestions": "[{\"title\": \"Mini Parser\", \"titleSlug\": \"mini-parser\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Ternary Expression Parser\", \"titleSlug\": \"ternary-expression-parser\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+            "exampleTestcases": "[\"/*Test program */\", \"int main()\", \"{ \", \"  // variable declaration \", \"int a, b, c;\", \"/* This is a test\", \"   multiline  \", \"   comment for \", \"   testing */\", \"a = b + c;\", \"}\"]",
+            "contributors": [],
+            "topicTags": [
+                {
+                    "name": "String",
+                    "slug": "string",
+                    "translatedName": null,
+                    "__typename": "TopicTagNode"
+                }
+            ],
+            "companyTagStats": null,
+            "codeSnippets": [
+                {
+                    "lang": "C++",
+                    "langSlug": "cpp",
+                    "code": "class Solution {\npublic:\n    vector<string> removeComments(vector<string>& source) {\n        \n    }\n};",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Java",
+                    "langSlug": "java",
+                    "code": "class Solution {\n    public List<String> removeComments(String[] source) {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Python",
+                    "langSlug": "python",
+                    "code": "class Solution(object):\n    def removeComments(self, source):\n        \"\"\"\n        :type source: List[str]\n        :rtype: List[str]\n        \"\"\"\n        ",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Python3",
+                    "langSlug": "python3",
+                    "code": "class Solution:\n    def removeComments(self, source: List[str]) -> List[str]:\n        ",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "C",
+                    "langSlug": "c",
+                    "code": "\n\n/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar ** removeComments(char ** source, int sourceSize, int* returnSize){\n\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "C#",
+                    "langSlug": "csharp",
+                    "code": "public class Solution {\n    public IList<string> RemoveComments(string[] source) {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "JavaScript",
+                    "langSlug": "javascript",
+                    "code": "/**\n * @param {string[]} source\n * @return {string[]}\n */\nvar removeComments = function(source) {\n    \n};",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Ruby",
+                    "langSlug": "ruby",
+                    "code": "# @param {String[]} source\n# @return {String[]}\ndef remove_comments(source)\n    \nend",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Swift",
+                    "langSlug": "swift",
+                    "code": "class Solution {\n    func removeComments(_ source: [String]) -> [String] {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Go",
+                    "langSlug": "golang",
+                    "code": "func removeComments(source []string) []string {\n    \n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Scala",
+                    "langSlug": "scala",
+                    "code": "object Solution {\n    def removeComments(source: Array[String]): List[String] = {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Kotlin",
+                    "langSlug": "kotlin",
+                    "code": "class Solution {\n    fun removeComments(source: Array<String>): List<String> {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Rust",
+                    "langSlug": "rust",
+                    "code": "impl Solution {\n    pub fn remove_comments(source: Vec<String>) -> Vec<String> {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "PHP",
+                    "langSlug": "php",
+                    "code": "class Solution {\n\n    /**\n     * @param String[] $source\n     * @return String[]\n     */\n    function removeComments($source) {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "TypeScript",
+                    "langSlug": "typescript",
+                    "code": "function removeComments(source: string[]): string[] {\n\n};",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Racket",
+                    "langSlug": "racket",
+                    "code": "(define/contract (remove-comments source)\n  (-> (listof string?) (listof string?))\n\n  )",
+                    "__typename": "CodeSnippetNode"
+                }
+            ],
+            "stats": "{\"totalAccepted\": \"43.8K\", \"totalSubmission\": \"119.5K\", \"totalAcceptedRaw\": 43793, \"totalSubmissionRaw\": 119492, \"acRate\": \"36.6%\"}",
+            "hints": [
+                "Carefully parse each line according to the following rules:\r\n\r\n* If we start a block comment and we aren't in a block, then we will skip over the next two characters and change our state to be in a block.\r\n\r\n* If we end a block comment and we are in a block, then we will skip over the next two characters and change our state to be *not* in a block.\r\n\r\n* If we start a line comment and we aren't in a block, then we will ignore the rest of the line.\r\n\r\n* If we aren't in a block comment (and it wasn't the start of a comment), we will record the character we are at.\r\n\r\n* At the end of each line, if we aren't in a block, we will record the line."
+            ],
+            "solution": null,
+            "status": null,
+            "sampleTestCase": "[\"/*Test program */\", \"int main()\", \"{ \", \"  // variable declaration \", \"int a, b, c;\", \"/* This is a test\", \"   multiline  \", \"   comment for \", \"   testing */\", \"a = b + c;\", \"}\"]",
+            "metaData": "{\r\n  \"name\": \"removeComments\",\r\n  \"params\": [\r\n    {\r\n      \"name\": \"source\",\r\n      \"type\": \"string[]\"\r\n    }\r\n  ],\r\n  \"return\": {\r\n    \"type\": \"list<string>\"\r\n  }\r\n}",
+            "judgerAvailable": true,
+            "judgeType": "small",
+            "mysqlSchemas": [],
+            "enableRunCode": true,
+            "enableTestMode": false,
+            "enableDebugger": true,
+            "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code>Java SE 13</code>.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu99 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8\\\" target=\\\"_blank\\\">C# 8.0 </a></p>\\r\\n\\r\\n<p>Your code is compiled with debug flag enabled (<code>/debug</code>).</p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 14.3.0</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 2.7.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.2.5</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.13</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.9</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.40.0</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand</a>\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 7.2</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>Node.js 14.3.0</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 7.9</code>.</p>\"]}",
+            "libraryUrl": null,
+            "adminUrl": null,
+            "__typename": "QuestionNode"
+        }
+    }
+}

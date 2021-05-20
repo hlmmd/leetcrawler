@@ -1,0 +1,145 @@
+{
+    "data": {
+        "question": {
+            "questionId": "827",
+            "questionFrontendId": "809",
+            "boundTopicId": null,
+            "title": "Expressive Words",
+            "titleSlug": "expressive-words",
+            "content": "<p>Sometimes people repeat letters to represent extra feeling, such as &quot;hello&quot; -&gt; &quot;heeellooo&quot;, &quot;hi&quot; -&gt; &quot;hiiii&quot;.&nbsp; In these strings like &quot;heeellooo&quot;, we have <em>groups</em> of adjacent letters that are all the same:&nbsp; &quot;h&quot;, &quot;eee&quot;, &quot;ll&quot;, &quot;ooo&quot;.</p>\n\n<p>For some given string <code>s</code>, a query word is <em>stretchy</em> if it can be made to be equal to <code>s</code> by any&nbsp;number of&nbsp;applications of the following <em>extension</em> operation: choose a group consisting of&nbsp;characters <code>c</code>, and add some number of characters <code>c</code> to the group so that the size of the group is 3 or more.</p>\n\n<p>For example, starting with &quot;hello&quot;, we could do an extension on the group &quot;o&quot; to get &quot;hellooo&quot;, but we cannot get &quot;helloo&quot; since the group &quot;oo&quot; has size less than 3.&nbsp; Also, we could do another extension like &quot;ll&quot; -&gt; &quot;lllll&quot; to get &quot;helllllooo&quot;.&nbsp; If <code>s = &quot;helllllooo&quot;</code>, then the query word &quot;hello&quot; would be stretchy because of these two extension operations:&nbsp;<code>query = &quot;hello&quot; -&gt; &quot;hellooo&quot; -&gt;&nbsp;&quot;helllllooo&quot; = s</code>.</p>\n\n<p>Given a list of query words, return the number of words that are stretchy.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<pre>\n<strong>Example:</strong>\n<strong>Input:</strong> \ns = &quot;heeellooo&quot;\nwords = [&quot;hello&quot;, &quot;hi&quot;, &quot;helo&quot;]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> \nWe can extend &quot;e&quot; and &quot;o&quot; in the word &quot;hello&quot; to get &quot;heeellooo&quot;.\nWe can&#39;t extend &quot;helo&quot; to get &quot;heeellooo&quot; because the group &quot;ll&quot; is not size 3 or more.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= len(s) &lt;= 100</code>.</li>\n\t<li><code>0 &lt;= len(words) &lt;= 100</code>.</li>\n\t<li><code>0 &lt;= len(words[i]) &lt;= 100</code>.</li>\n\t<li><code>s</code> and all words in <code>words</code>&nbsp;consist only of&nbsp;lowercase letters</li>\n</ul>\n",
+            "translatedTitle": null,
+            "translatedContent": null,
+            "isPaidOnly": false,
+            "difficulty": "Medium",
+            "likes": 476,
+            "dislikes": 1145,
+            "isLiked": null,
+            "similarQuestions": "[]",
+            "exampleTestcases": "\"heeellooo\"\n[\"hello\", \"hi\", \"helo\"]",
+            "contributors": [],
+            "topicTags": [
+                {
+                    "name": "String",
+                    "slug": "string",
+                    "translatedName": null,
+                    "__typename": "TopicTagNode"
+                }
+            ],
+            "companyTagStats": null,
+            "codeSnippets": [
+                {
+                    "lang": "C++",
+                    "langSlug": "cpp",
+                    "code": "class Solution {\npublic:\n    int expressiveWords(string s, vector<string>& words) {\n        \n    }\n};",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Java",
+                    "langSlug": "java",
+                    "code": "class Solution {\n    public int expressiveWords(String s, String[] words) {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Python",
+                    "langSlug": "python",
+                    "code": "class Solution(object):\n    def expressiveWords(self, s, words):\n        \"\"\"\n        :type s: str\n        :type words: List[str]\n        :rtype: int\n        \"\"\"\n        ",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Python3",
+                    "langSlug": "python3",
+                    "code": "class Solution:\n    def expressiveWords(self, s: str, words: List[str]) -> int:\n        ",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "C",
+                    "langSlug": "c",
+                    "code": "\n\nint expressiveWords(char * s, char ** words, int wordsSize){\n\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "C#",
+                    "langSlug": "csharp",
+                    "code": "public class Solution {\n    public int ExpressiveWords(string s, string[] words) {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "JavaScript",
+                    "langSlug": "javascript",
+                    "code": "/**\n * @param {string} s\n * @param {string[]} words\n * @return {number}\n */\nvar expressiveWords = function(s, words) {\n    \n};",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Ruby",
+                    "langSlug": "ruby",
+                    "code": "# @param {String} s\n# @param {String[]} words\n# @return {Integer}\ndef expressive_words(s, words)\n    \nend",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Swift",
+                    "langSlug": "swift",
+                    "code": "class Solution {\n    func expressiveWords(_ s: String, _ words: [String]) -> Int {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Go",
+                    "langSlug": "golang",
+                    "code": "func expressiveWords(s string, words []string) int {\n    \n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Scala",
+                    "langSlug": "scala",
+                    "code": "object Solution {\n    def expressiveWords(s: String, words: Array[String]): Int = {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Kotlin",
+                    "langSlug": "kotlin",
+                    "code": "class Solution {\n    fun expressiveWords(s: String, words: Array<String>): Int {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Rust",
+                    "langSlug": "rust",
+                    "code": "impl Solution {\n    pub fn expressive_words(s: String, words: Vec<String>) -> i32 {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "PHP",
+                    "langSlug": "php",
+                    "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String[] $words\n     * @return Integer\n     */\n    function expressiveWords($s, $words) {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "TypeScript",
+                    "langSlug": "typescript",
+                    "code": "function expressiveWords(s: string, words: string[]): number {\n\n};",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Racket",
+                    "langSlug": "racket",
+                    "code": "(define/contract (expressive-words s words)\n  (-> string? (listof string?) exact-integer?)\n\n  )",
+                    "__typename": "CodeSnippetNode"
+                }
+            ],
+            "stats": "{\"totalAccepted\": \"67.5K\", \"totalSubmission\": \"145.8K\", \"totalAcceptedRaw\": 67453, \"totalSubmissionRaw\": 145781, \"acRate\": \"46.3%\"}",
+            "hints": [],
+            "solution": null,
+            "status": null,
+            "sampleTestCase": "\"heeellooo\"\n[\"hello\", \"hi\", \"helo\"]",
+            "metaData": "{\n  \"name\": \"expressiveWords\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"words\",\n      \"type\": \"string[]\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"integer\"\n  }\n}",
+            "judgerAvailable": true,
+            "judgeType": "large",
+            "mysqlSchemas": [],
+            "enableRunCode": true,
+            "enableTestMode": false,
+            "enableDebugger": true,
+            "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code>Java SE 13</code>.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu99 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8\\\" target=\\\"_blank\\\">C# 8.0 </a></p>\\r\\n\\r\\n<p>Your code is compiled with debug flag enabled (<code>/debug</code>).</p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 14.3.0</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 2.7.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.2.5</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.13</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.9</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.40.0</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand</a>\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 7.2</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>Node.js 14.3.0</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 7.9</code>.</p>\"]}",
+            "libraryUrl": null,
+            "adminUrl": null,
+            "__typename": "QuestionNode"
+        }
+    }
+}

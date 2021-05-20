@@ -1,0 +1,79 @@
+{
+    "data": {
+        "question": {
+            "questionId": "596",
+            "questionFrontendId": "596",
+            "boundTopicId": null,
+            "title": "Classes More Than 5 Students",
+            "titleSlug": "classes-more-than-5-students",
+            "content": "<p>There is a table <code>courses</code> with columns: <b>student</b> and <b>class</b></p>\r\n\r\n<p>Please list out all classes which have more than or equal to 5 students.</p>\r\n\r\n<p>For example, the table:</p>\r\n\r\n<pre>\r\n+---------+------------+\r\n| student | class      |\r\n+---------+------------+\r\n| A       | Math       |\r\n| B       | English    |\r\n| C       | Math       |\r\n| D       | Biology    |\r\n| E       | Math       |\r\n| F       | Computer   |\r\n| G       | Math       |\r\n| H       | Math       |\r\n| I       | Math       |\r\n+---------+------------+\r\n</pre>\r\n\r\n<p>Should output:</p>\r\n\r\n<pre>\r\n+---------+\r\n| class   |\r\n+---------+\r\n| Math    |\r\n+---------+\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><b>Note:</b><br />\r\nThe students should not be counted duplicate in each course.</p>\r\n",
+            "translatedTitle": null,
+            "translatedContent": null,
+            "isPaidOnly": false,
+            "difficulty": "Easy",
+            "likes": 294,
+            "dislikes": 775,
+            "isLiked": null,
+            "similarQuestions": "[]",
+            "exampleTestcases": "{\"headers\": {\"courses\": [\"student\", \"class\"]}, \"rows\": {\"courses\": [[\"A\", \"Math\"], [\"B\", \"English\"], [\"C\", \"Math\"], [\"D\", \"Biology\"], [\"E\", \"Math\"], [\"F\", \"Computer\"], [\"G\", \"Math\"], [\"H\", \"Math\"], [\"I\", \"Math\"]]}}",
+            "contributors": [],
+            "topicTags": [],
+            "companyTagStats": null,
+            "codeSnippets": [
+                {
+                    "lang": "MySQL",
+                    "langSlug": "mysql",
+                    "code": "# Write your MySQL query statement below\n",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "MS SQL Server",
+                    "langSlug": "mssql",
+                    "code": "/* Write your T-SQL query statement below */\n",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Oracle",
+                    "langSlug": "oraclesql",
+                    "code": "/* Write your PL/SQL query statement below */\n",
+                    "__typename": "CodeSnippetNode"
+                }
+            ],
+            "stats": "{\"totalAccepted\": \"110.3K\", \"totalSubmission\": \"282.6K\", \"totalAcceptedRaw\": 110289, \"totalSubmissionRaw\": 282597, \"acRate\": \"39.0%\"}",
+            "hints": [],
+            "solution": {
+                "id": "202",
+                "canSeeDetail": true,
+                "paidOnly": false,
+                "hasVideoSolution": false,
+                "paidOnlyVideo": true,
+                "__typename": "ArticleNode"
+            },
+            "status": null,
+            "sampleTestCase": "{\"headers\": {\"courses\": [\"student\", \"class\"]}, \"rows\": {\"courses\": [[\"A\", \"Math\"], [\"B\", \"English\"], [\"C\", \"Math\"], [\"D\", \"Biology\"], [\"E\", \"Math\"], [\"F\", \"Computer\"], [\"G\", \"Math\"], [\"H\", \"Math\"], [\"I\", \"Math\"]]}}",
+            "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists courses (student varchar(255), class varchar(255))\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table courses (student varchar(255), class varchar(255))\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table courses (student varchar(255), class varchar(255))\"\r\n  ],\r\n  \"database\": true\r\n}",
+            "judgerAvailable": true,
+            "judgeType": "large",
+            "mysqlSchemas": [
+                "Create table If Not Exists courses (student varchar(255), class varchar(255))",
+                "Truncate table courses",
+                "insert into courses (student, class) values ('A', 'Math')",
+                "insert into courses (student, class) values ('B', 'English')",
+                "insert into courses (student, class) values ('C', 'Math')",
+                "insert into courses (student, class) values ('D', 'Biology')",
+                "insert into courses (student, class) values ('E', 'Math')",
+                "insert into courses (student, class) values ('F', 'Computer')",
+                "insert into courses (student, class) values ('G', 'Math')",
+                "insert into courses (student, class) values ('H', 'Math')",
+                "insert into courses (student, class) values ('I', 'Math')"
+            ],
+            "enableRunCode": true,
+            "enableTestMode": false,
+            "enableDebugger": false,
+            "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+            "libraryUrl": null,
+            "adminUrl": null,
+            "__typename": "QuestionNode"
+        }
+    }
+}

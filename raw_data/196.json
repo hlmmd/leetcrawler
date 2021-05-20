@@ -1,0 +1,60 @@
+{
+    "data": {
+        "question": {
+            "questionId": "196",
+            "questionFrontendId": "196",
+            "boundTopicId": null,
+            "title": "Delete Duplicate Emails",
+            "titleSlug": "delete-duplicate-emails",
+            "content": "<p>Write a SQL query to <strong>delete</strong> all duplicate email entries in a table named <code>Person</code>, keeping only unique emails based on its <i>smallest</i> <b>Id</b>.</p>\r\n\r\n<pre>\r\n+----+------------------+\r\n| Id | Email            |\r\n+----+------------------+\r\n| 1  | john@example.com |\r\n| 2  | bob@example.com  |\r\n| 3  | john@example.com |\r\n+----+------------------+\r\nId is the primary key column for this table.\r\n</pre>\r\n\r\n<p>For example, after running your query, the above <code>Person</code> table should have the following rows:</p>\r\n\r\n<pre>\r\n+----+------------------+\r\n| Id | Email            |\r\n+----+------------------+\r\n| 1  | john@example.com |\r\n| 2  | bob@example.com  |\r\n+----+------------------+\r\n</pre>\r\n\r\n<p><strong>Note:</strong></p>\r\n\r\n<p>Your output is the whole <code>Person</code>&nbsp;table after executing your sql. Use <code>delete</code> statement.</p>\r\n",
+            "translatedTitle": null,
+            "translatedContent": null,
+            "isPaidOnly": false,
+            "difficulty": "Easy",
+            "likes": 571,
+            "dislikes": 853,
+            "isLiked": null,
+            "similarQuestions": "[]",
+            "exampleTestcases": "{\"headers\": {\"Person\": [\"Id\", \"Email\"]}, \"rows\": {\"Person\": [[1, \"john@example.com\"], [2, \"bob@example.com\"], [3, \"john@example.com\"]]}}",
+            "contributors": [],
+            "topicTags": [],
+            "companyTagStats": null,
+            "codeSnippets": [
+                {
+                    "lang": "MySQL",
+                    "langSlug": "mysql",
+                    "code": "# Write your MySQL query statement below\n",
+                    "__typename": "CodeSnippetNode"
+                }
+            ],
+            "stats": "{\"totalAccepted\": \"154.2K\", \"totalSubmission\": \"330.9K\", \"totalAcceptedRaw\": 154175, \"totalSubmissionRaw\": 330873, \"acRate\": \"46.6%\"}",
+            "hints": [],
+            "solution": {
+                "id": "210",
+                "canSeeDetail": true,
+                "paidOnly": false,
+                "hasVideoSolution": false,
+                "paidOnlyVideo": true,
+                "__typename": "ArticleNode"
+            },
+            "status": null,
+            "sampleTestCase": "{\"headers\": {\"Person\": [\"Id\", \"Email\"]}, \"rows\": {\"Person\": [[1, \"john@example.com\"], [2, \"bob@example.com\"], [3, \"john@example.com\"]]}}",
+            "metaData": "{\n  \"mysql\": [],\n  \"mssql\": [],\n  \"oraclesql\": [],\n  \"database\": true,\n  \"manual\": true,\n  \"languages\": [\n    \"mysql\"\n  ]\n}",
+            "judgerAvailable": true,
+            "judgeType": "large",
+            "mysqlSchemas": [
+                "Truncate table Person",
+                "insert into Person (Id, Email) values ('1', 'john@example.com')",
+                "insert into Person (Id, Email) values ('2', 'bob@example.com')",
+                "insert into Person (Id, Email) values ('3', 'john@example.com')"
+            ],
+            "enableRunCode": true,
+            "enableTestMode": false,
+            "enableDebugger": false,
+            "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"]}",
+            "libraryUrl": null,
+            "adminUrl": null,
+            "__typename": "QuestionNode"
+        }
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "data": {
+        "question": {
+            "questionId": "182",
+            "questionFrontendId": "182",
+            "boundTopicId": null,
+            "title": "Duplicate Emails",
+            "titleSlug": "duplicate-emails",
+            "content": "<p>Write a SQL query to find all duplicate emails in a table named <code>Person</code>.</p>\r\n\r\n<pre>\r\n+----+---------+\r\n| Id | Email   |\r\n+----+---------+\r\n| 1  | a@b.com |\r\n| 2  | c@d.com |\r\n| 3  | a@b.com |\r\n+----+---------+\r\n</pre>\r\n\r\n<p>For example, your query should return the following for the above table:</p>\r\n\r\n<pre>\r\n+---------+\r\n| Email   |\r\n+---------+\r\n| a@b.com |\r\n+---------+\r\n</pre>\r\n\r\n<p><strong>Note</strong>: All emails are in lowercase.</p>\r\n",
+            "translatedTitle": null,
+            "translatedContent": null,
+            "isPaidOnly": false,
+            "difficulty": "Easy",
+            "likes": 653,
+            "dislikes": 36,
+            "isLiked": null,
+            "similarQuestions": "[]",
+            "exampleTestcases": "{\"headers\": {\"Person\": [\"Id\", \"Email\"]}, \"rows\": {\"Person\": [[1, \"a@b.com\"], [2, \"c@d.com\"], [3, \"a@b.com\"]]}}",
+            "contributors": [],
+            "topicTags": [],
+            "companyTagStats": null,
+            "codeSnippets": [
+                {
+                    "lang": "MySQL",
+                    "langSlug": "mysql",
+                    "code": "# Write your MySQL query statement below\n",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "MS SQL Server",
+                    "langSlug": "mssql",
+                    "code": "/* Write your T-SQL query statement below */\n",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Oracle",
+                    "langSlug": "oraclesql",
+                    "code": "/* Write your PL/SQL query statement below */\n",
+                    "__typename": "CodeSnippetNode"
+                }
+            ],
+            "stats": "{\"totalAccepted\": \"243.6K\", \"totalSubmission\": \"372.2K\", \"totalAcceptedRaw\": 243637, \"totalSubmissionRaw\": 372193, \"acRate\": \"65.5%\"}",
+            "hints": [],
+            "solution": {
+                "id": "214",
+                "canSeeDetail": true,
+                "paidOnly": false,
+                "hasVideoSolution": false,
+                "paidOnlyVideo": true,
+                "__typename": "ArticleNode"
+            },
+            "status": null,
+            "sampleTestCase": "{\"headers\": {\"Person\": [\"Id\", \"Email\"]}, \"rows\": {\"Person\": [[1, \"a@b.com\"], [2, \"c@d.com\"], [3, \"a@b.com\"]]}}",
+            "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Person (Id int, Email varchar(255))\"\n  ],\n  \"mssql\": [\n    \"create table Person ( Id int, Email varchar(255) )\"\n  ],\n  \"oraclesql\": [\n    \"create table Person ( Id int, Email varchar(255) )\"\n  ],\n  \"database\": true\n}",
+            "judgerAvailable": true,
+            "judgeType": "large",
+            "mysqlSchemas": [
+                "Create table If Not Exists Person (Id int, Email varchar(255))",
+                "Truncate table Person",
+                "insert into Person (Id, Email) values ('1', 'a@b.com')",
+                "insert into Person (Id, Email) values ('2', 'c@d.com')",
+                "insert into Person (Id, Email) values ('3', 'a@b.com')"
+            ],
+            "enableRunCode": true,
+            "enableTestMode": false,
+            "enableDebugger": false,
+            "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+            "libraryUrl": null,
+            "adminUrl": null,
+            "__typename": "QuestionNode"
+        }
+    }
+}

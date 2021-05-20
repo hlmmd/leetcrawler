@@ -1,0 +1,75 @@
+{
+    "data": {
+        "question": {
+            "questionId": "620",
+            "questionFrontendId": "620",
+            "boundTopicId": null,
+            "title": "Not Boring Movies",
+            "titleSlug": "not-boring-movies",
+            "content": "X city opened a new cinema, many people would like to go to this cinema. The cinema also gives out a poster indicating the movies&rsquo; ratings and descriptions.\r\n<p>Please write a SQL query to output movies with an odd numbered ID and a description that is not &#39;boring&#39;. Order the result by rating.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>For example, table <code>cinema</code>:</p>\r\n\r\n<pre>\r\n+---------+-----------+--------------+-----------+\r\n|   id    | movie     |  description |  rating   |\r\n+---------+-----------+--------------+-----------+\r\n|   1     | War       |   great 3D   |   8.9     |\r\n|   2     | Science   |   fiction    |   8.5     |\r\n|   3     | irish     |   boring     |   6.2     |\r\n|   4     | Ice song  |   Fantacy    |   8.6     |\r\n|   5     | House card|   Interesting|   9.1     |\r\n+---------+-----------+--------------+-----------+\r\n</pre>\r\nFor the example above, the output should be:\r\n\r\n<pre>\r\n+---------+-----------+--------------+-----------+\r\n|   id    | movie     |  description |  rating   |\r\n+---------+-----------+--------------+-----------+\r\n|   5     | House card|   Interesting|   9.1     |\r\n|   1     | War       |   great 3D   |   8.9     |\r\n+---------+-----------+--------------+-----------+\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+            "translatedTitle": null,
+            "translatedContent": null,
+            "isPaidOnly": false,
+            "difficulty": "Easy",
+            "likes": 355,
+            "dislikes": 331,
+            "isLiked": null,
+            "similarQuestions": "[]",
+            "exampleTestcases": "{\"headers\":{\"cinema\":[\"id\", \"movie\", \"description\", \"rating\"]},\"rows\":{\"cinema\":[[1, \"War\", \"great 3D\", 8.9], [2, \"Science\", \"fiction\", 8.5], [3, \"irish\", \"boring\", 6.2], [4, \"Ice song\", \"Fantacy\", 8.6], [5, \"House card\", \"Interesting\", 9.1]]}}",
+            "contributors": [],
+            "topicTags": [],
+            "companyTagStats": null,
+            "codeSnippets": [
+                {
+                    "lang": "MySQL",
+                    "langSlug": "mysql",
+                    "code": "# Write your MySQL query statement below\n",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "MS SQL Server",
+                    "langSlug": "mssql",
+                    "code": "/* Write your T-SQL query statement below */\n",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Oracle",
+                    "langSlug": "oraclesql",
+                    "code": "/* Write your PL/SQL query statement below */\n",
+                    "__typename": "CodeSnippetNode"
+                }
+            ],
+            "stats": "{\"totalAccepted\": \"140K\", \"totalSubmission\": \"198.6K\", \"totalAcceptedRaw\": 140035, \"totalSubmissionRaw\": 198634, \"acRate\": \"70.5%\"}",
+            "hints": [],
+            "solution": {
+                "id": "204",
+                "canSeeDetail": true,
+                "paidOnly": false,
+                "hasVideoSolution": false,
+                "paidOnlyVideo": true,
+                "__typename": "ArticleNode"
+            },
+            "status": null,
+            "sampleTestCase": "{\"headers\":{\"cinema\":[\"id\", \"movie\", \"description\", \"rating\"]},\"rows\":{\"cinema\":[[1, \"War\", \"great 3D\", 8.9], [2, \"Science\", \"fiction\", 8.5], [3, \"irish\", \"boring\", 6.2], [4, \"Ice song\", \"Fantacy\", 8.6], [5, \"House card\", \"Interesting\", 9.1]]}}",
+            "metaData": "{\r\n  \"mysql\": [\r\n    \"Create table If Not Exists cinema (id int, movie varchar(255), description varchar(255), rating float(2, 1))\"\r\n  ],\r\n  \"mssql\": [\r\n    \"Create table cinema (id int, movie varchar(255), description varchar(255), rating decimal(2, 1))\"\r\n  ],\r\n  \"oraclesql\": [\r\n    \"Create table cinema (id int, movie varchar(255), description varchar(255), rating number(2, 1))\"\r\n  ],\r\n  \"database\": true\r\n}",
+            "judgerAvailable": true,
+            "judgeType": "large",
+            "mysqlSchemas": [
+                "Create table If Not Exists cinema (id int, movie varchar(255), description varchar(255), rating float(2, 1))",
+                "Truncate table cinema",
+                "insert into cinema (id, movie, description, rating) values ('1', 'War', 'great 3D', '8.9')",
+                "insert into cinema (id, movie, description, rating) values ('2', 'Science', 'fiction', '8.5')",
+                "insert into cinema (id, movie, description, rating) values ('3', 'irish', 'boring', '6.2')",
+                "insert into cinema (id, movie, description, rating) values ('4', 'Ice song', 'Fantacy', '8.6')",
+                "insert into cinema (id, movie, description, rating) values ('5', 'House card', 'Interesting', '9.1')"
+            ],
+            "enableRunCode": true,
+            "enableTestMode": false,
+            "enableDebugger": false,
+            "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+            "libraryUrl": null,
+            "adminUrl": null,
+            "__typename": "QuestionNode"
+        }
+    }
+}

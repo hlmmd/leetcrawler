@@ -1,0 +1,145 @@
+{
+    "data": {
+        "question": {
+            "questionId": "858",
+            "questionFrontendId": "831",
+            "boundTopicId": null,
+            "title": "Masking Personal Information",
+            "titleSlug": "masking-personal-information",
+            "content": "<p>We are given a&nbsp;personal information string <code>s</code>, which may represent&nbsp;either <strong>an email address</strong> or <strong>a phone number.</strong></p>\n\n<p>We would like to mask this&nbsp;personal information according to the&nbsp;following rules:</p>\n\n<p><br />\n<u><strong>1. Email address:</strong></u></p>\n\n<p>We define a&nbsp;<strong>name</strong> to be a string of <code>length &ge; 2</code> consisting&nbsp;of only lowercase letters&nbsp;<code>a-z</code> or uppercase&nbsp;letters&nbsp;<code>A-Z</code>.</p>\n\n<p>An email address starts with a name, followed by the&nbsp;symbol <code>&#39;@&#39;</code>, followed by a name, followed by the&nbsp;dot&nbsp;<code>&#39;.&#39;</code>&nbsp;and&nbsp;followed by a name.&nbsp;</p>\n\n<p>All email addresses are&nbsp;guaranteed to be valid and in the format of&nbsp;<code>&quot;name1@name2.name3&quot;.</code></p>\n\n<p>To mask an email, <strong>all names must be converted to lowercase</strong> and <strong>all letters between the first and last letter of the first name</strong> must be replaced by 5 asterisks <code>&#39;*&#39;</code>.</p>\n\n<p><br />\n<u><strong>2. Phone number:</strong></u></p>\n\n<p>A phone number is a string consisting of&nbsp;only the digits <code>0-9</code> or the characters from the set <code>{&#39;+&#39;, &#39;-&#39;, &#39;(&#39;, &#39;)&#39;, &#39;&nbsp;&#39;}.</code>&nbsp;You may assume a phone&nbsp;number contains&nbsp;10 to 13 digits.</p>\n\n<p>The last 10 digits make up the local&nbsp;number, while the digits before those make up the country code. Note that&nbsp;the country code is optional. We want to expose only the last 4 digits&nbsp;and mask all other&nbsp;digits.</p>\n\n<p>The local&nbsp;number&nbsp;should be formatted and masked as <code>&quot;***-***-1111&quot;,&nbsp;</code>where <code>1</code> represents the exposed digits.</p>\n\n<p>To mask a phone number with country code like <code>&quot;+111 111 111 1111&quot;</code>, we write it in the form <code>&quot;+***-***-***-1111&quot;.</code>&nbsp; The <code>&#39;+&#39;</code>&nbsp;sign and the first <code>&#39;-&#39;</code>&nbsp;sign before the local number should only exist if there is a country code.&nbsp; For example, a 12 digit phone number mask&nbsp;should start&nbsp;with <code>&quot;+**-&quot;</code>.</p>\n\n<p>Note that extraneous characters like <code>&quot;(&quot;, &quot;)&quot;, &quot; &quot;</code>, as well as&nbsp;extra dashes or plus signs not part of the above formatting scheme should be removed.</p>\n\n<p>&nbsp;</p>\n\n<p>Return the correct &quot;mask&quot; of the information provided.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Example 1:</strong></p>\n\n<pre>\n<strong>Input: </strong>s = &quot;LeetCode@LeetCode.com&quot;\n<strong>Output: </strong>&quot;l*****e@leetcode.com&quot;\n<strong>Explanation:&nbsp;</strong>All names are converted to lowercase, and the letters between the\n&nbsp;            first and last letter of the first name is replaced by 5 asterisks.\n&nbsp;            Therefore, &quot;leetcode&quot; -&gt; &quot;l*****e&quot;.\n</pre>\n\n<p><strong>Example 2:</strong></p>\n\n<pre>\n<strong>Input: </strong>s = &quot;AB@qq.com&quot;\n<strong>Output: </strong>&quot;a*****b@qq.com&quot;\n<strong>Explanation:&nbsp;</strong>There must be 5 asterisks between the first and last letter \n&nbsp;            of the first name &quot;ab&quot;. Therefore, &quot;ab&quot; -&gt; &quot;a*****b&quot;.\n</pre>\n\n<p><strong>Example 3:</strong></p>\n\n<pre>\n<strong>Input: </strong>s = &quot;1(234)567-890&quot;\n<strong>Output: </strong>&quot;***-***-7890&quot;\n<strong>Explanation:</strong>&nbsp;10 digits in the phone number, which means all digits make up the local number.\n</pre>\n\n<p><strong>Example 4:</strong></p>\n\n<pre>\n<strong>Input: </strong>s = &quot;86-(10)12345678&quot;\n<strong>Output: </strong>&quot;+**-***-***-5678&quot;\n<strong>Explanation:</strong>&nbsp;12 digits, 2 digits for country code and 10 digits for local number. \n</pre>\n\n<p><strong>Notes:</strong></p>\n\n<ol>\n\t<li><code>s.length&nbsp;&lt;=&nbsp;40</code>.</li>\n\t<li>Emails have length at least 8.</li>\n\t<li>Phone numbers have length at least 10.</li>\n</ol>\n",
+            "translatedTitle": null,
+            "translatedContent": null,
+            "isPaidOnly": false,
+            "difficulty": "Medium",
+            "likes": 97,
+            "dislikes": 360,
+            "isLiked": null,
+            "similarQuestions": "[]",
+            "exampleTestcases": "\"LeetCode@LeetCode.com\"\n\"AB@qq.com\"\n\"1(234)567-890\"\n\"86-(10)12345678\"",
+            "contributors": [],
+            "topicTags": [
+                {
+                    "name": "String",
+                    "slug": "string",
+                    "translatedName": null,
+                    "__typename": "TopicTagNode"
+                }
+            ],
+            "companyTagStats": null,
+            "codeSnippets": [
+                {
+                    "lang": "C++",
+                    "langSlug": "cpp",
+                    "code": "class Solution {\npublic:\n    string maskPII(string s) {\n        \n    }\n};",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Java",
+                    "langSlug": "java",
+                    "code": "class Solution {\n    public String maskPII(String s) {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Python",
+                    "langSlug": "python",
+                    "code": "class Solution(object):\n    def maskPII(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        ",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Python3",
+                    "langSlug": "python3",
+                    "code": "class Solution:\n    def maskPII(self, s: str) -> str:\n        ",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "C",
+                    "langSlug": "c",
+                    "code": "\n\nchar * maskPII(char * s){\n\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "C#",
+                    "langSlug": "csharp",
+                    "code": "public class Solution {\n    public string MaskPII(string s) {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "JavaScript",
+                    "langSlug": "javascript",
+                    "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar maskPII = function(s) {\n    \n};",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Ruby",
+                    "langSlug": "ruby",
+                    "code": "# @param {String} s\n# @return {String}\ndef mask_pii(s)\n    \nend",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Swift",
+                    "langSlug": "swift",
+                    "code": "class Solution {\n    func maskPII(_ s: String) -> String {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Go",
+                    "langSlug": "golang",
+                    "code": "func maskPII(s string) string {\n    \n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Scala",
+                    "langSlug": "scala",
+                    "code": "object Solution {\n    def maskPII(s: String): String = {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Kotlin",
+                    "langSlug": "kotlin",
+                    "code": "class Solution {\n    fun maskPII(s: String): String {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Rust",
+                    "langSlug": "rust",
+                    "code": "impl Solution {\n    pub fn mask_pii(s: String) -> String {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "PHP",
+                    "langSlug": "php",
+                    "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function maskPII($s) {\n        \n    }\n}",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "TypeScript",
+                    "langSlug": "typescript",
+                    "code": "function maskPII(s: string): string {\n\n};",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Racket",
+                    "langSlug": "racket",
+                    "code": "(define/contract (mask-pii s)\n  (-> string? string?)\n\n  )",
+                    "__typename": "CodeSnippetNode"
+                }
+            ],
+            "stats": "{\"totalAccepted\": \"12.3K\", \"totalSubmission\": \"27.6K\", \"totalAcceptedRaw\": 12348, \"totalSubmissionRaw\": 27555, \"acRate\": \"44.8%\"}",
+            "hints": [],
+            "solution": null,
+            "status": null,
+            "sampleTestCase": "\"LeetCode@LeetCode.com\"",
+            "metaData": "{\n  \"name\": \"maskPII\",\n  \"params\": [\n    {\n      \"name\": \"s\",\n      \"type\": \"string\"\n    }\n  ],\n  \"return\": {\n    \"type\": \"string\"\n  }\n}",
+            "judgerAvailable": true,
+            "judgeType": "large",
+            "mysqlSchemas": [],
+            "enableRunCode": true,
+            "enableTestMode": false,
+            "enableDebugger": true,
+            "envInfo": "{\"cpp\": [\"C++\", \"<p>Compiled with <code> clang 11 </code> using the latest C++ 17 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level two optimization (<code>-O2</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\"], \"java\": [\"Java\", \"<p><code>Java SE 13</code>.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n<p>Includes <code>Pair</code> class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html.</p>\"], \"python\": [\"Python\", \"<p><code>Python 2.7.12</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/2/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/2/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/2/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\\r\\n\\r\\n<p>Note that Python 2.7 <a href=\\\"https://www.python.org/dev/peps/pep-0373/\\\" target=\\\"_blank\\\">will not be maintained past 2020</a>. For the latest Python, please choose Python3 instead.</p>\"], \"c\": [\"C\", \"<p>Compiled with <code>gcc 8.2</code> using the gnu99 standard.</p>\\r\\n\\r\\n<p>Your code is compiled with level one optimization (<code>-O1</code>). <a href=\\\"https://github.com/google/sanitizers/wiki/AddressSanitizer\\\" target=\\\"_blank\\\">AddressSanitizer</a> is also enabled to help detect out-of-bounds and use-after-free bugs.</p>\\r\\n\\r\\n<p>Most standard library headers are already included automatically for your convenience.</p>\\r\\n\\r\\n<p>For hash table operations, you may use <a href=\\\"https://troydhanson.github.io/uthash/\\\" target=\\\"_blank\\\">uthash</a>. \\\"uthash.h\\\" is included by default. Below are some examples:</p>\\r\\n\\r\\n<p><b>1. Adding an item to a hash.</b>\\r\\n<pre>\\r\\nstruct hash_entry {\\r\\n    int id;            /* we'll use this field as the key */\\r\\n    char name[10];\\r\\n    UT_hash_handle hh; /* makes this structure hashable */\\r\\n};\\r\\n\\r\\nstruct hash_entry *users = NULL;\\r\\n\\r\\nvoid add_user(struct hash_entry *s) {\\r\\n    HASH_ADD_INT(users, id, s);\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>2. Looking up an item in a hash:</b>\\r\\n<pre>\\r\\nstruct hash_entry *find_user(int user_id) {\\r\\n    struct hash_entry *s;\\r\\n    HASH_FIND_INT(users, &user_id, s);\\r\\n    return s;\\r\\n}\\r\\n</pre>\\r\\n</p>\\r\\n\\r\\n<p><b>3. Deleting an item in a hash:</b>\\r\\n<pre>\\r\\nvoid delete_user(struct hash_entry *user) {\\r\\n    HASH_DEL(users, user);  \\r\\n}\\r\\n</pre>\\r\\n</p>\"], \"csharp\": [\"C#\", \"<p><a href=\\\"https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8\\\" target=\\\"_blank\\\">C# 8.0 </a></p>\\r\\n\\r\\n<p>Your code is compiled with debug flag enabled (<code>/debug</code>).</p>\"], \"javascript\": [\"JavaScript\", \"<p><code>Node.js 14.3.0</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES6 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\\r\\n\\r\\n<p>For Priority Queue / Queue data structures, you may use <a href=\\\"https://github.com/datastructures-js/priority-queue\\\" target=\\\"_blank\\\">datastructures-js/priority-queue</a> and <a href=\\\"https://github.com/datastructures-js/queue\\\" target=\\\"_blank\\\">datastructures-js/queue</a>.</p>\"], \"ruby\": [\"Ruby\", \"<p><code>Ruby 2.7.1</code></p>\\r\\n\\r\\n<p>Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms</p>\"], \"swift\": [\"Swift\", \"<p><code>Swift 5.2.5</code>.</p>\"], \"golang\": [\"Go\", \"<p><code>Go 1.13</code>.</p>\\r\\n\\r\\n<p>Support <a href=\\\"https://godoc.org/github.com/emirpasic/gods\\\" target=\\\"_blank\\\">https://godoc.org/github.com/emirpasic/gods</a> library.</p>\"], \"python3\": [\"Python3\", \"<p><code>Python 3.9</code>.</p>\\r\\n\\r\\n<p>Most libraries are already imported automatically for your convenience, such as <a href=\\\"https://docs.python.org/3/library/array.html\\\" target=\\\"_blank\\\">array</a>, <a href=\\\"https://docs.python.org/3/library/bisect.html\\\" target=\\\"_blank\\\">bisect</a>, <a href=\\\"https://docs.python.org/3/library/collections.html\\\" target=\\\"_blank\\\">collections</a>. If you need more libraries, you can import it yourself.</p>\\r\\n\\r\\n<p>For Map/TreeMap data structure, you may use <a href=\\\"http://www.grantjenks.com/docs/sortedcontainers/\\\" target=\\\"_blank\\\">sortedcontainers</a> library.</p>\"], \"scala\": [\"Scala\", \"<p><code>Scala 2.13</code>.</p>\"], \"kotlin\": [\"Kotlin\", \"<p><code>Kotlin 1.3.10</code>.</p>\"], \"rust\": [\"Rust\", \"<p><code>Rust 1.40.0</code></p>\\r\\n\\r\\n<p>Supports <a href=\\\"https://crates.io/crates/rand\\\" target=\\\"_blank\\\">rand</a>\\u00a0from crates.io</p>\"], \"php\": [\"PHP\", \"<p><code>PHP 7.2</code>.</p>\\r\\n<p>With bcmath module</p>\"], \"typescript\": [\"Typescript\", \"<p><code>Node.js 14.3.0</code>.</p>\\r\\n\\r\\n<p>Your code is run with <code>--harmony</code> flag, enabling <a href=\\\"http://node.green/\\\" target=\\\"_blank\\\">new ES2020 features</a>.</p>\\r\\n\\r\\n<p><a href=\\\"https://lodash.com\\\" target=\\\"_blank\\\">lodash.js</a> library is included by default.</p>\"], \"racket\": [\"Racket\", \"<p>Run with <code>Racket 7.9</code>.</p>\"]}",
+            "libraryUrl": null,
+            "adminUrl": null,
+            "__typename": "QuestionNode"
+        }
+    }
+}

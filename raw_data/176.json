@@ -1,0 +1,73 @@
+{
+    "data": {
+        "question": {
+            "questionId": "176",
+            "questionFrontendId": "176",
+            "boundTopicId": null,
+            "title": "Second Highest Salary",
+            "titleSlug": "second-highest-salary",
+            "content": "<p>Write a SQL query to get the second highest salary from the <code>Employee</code> table.</p>\r\n\r\n<pre>\r\n+----+--------+\r\n| Id | Salary |\r\n+----+--------+\r\n| 1  | 100    |\r\n| 2  | 200    |\r\n| 3  | 300    |\r\n+----+--------+\r\n</pre>\r\n\r\n<p>For example, given the above Employee table, the query should return <code>200</code> as the second highest salary. If there is no second highest salary, then the query should return <code>null</code>.</p>\r\n\r\n<pre>\r\n+---------------------+\r\n| SecondHighestSalary |\r\n+---------------------+\r\n| 200                 |\r\n+---------------------+\r\n</pre>\r\n",
+            "translatedTitle": null,
+            "translatedContent": null,
+            "isPaidOnly": false,
+            "difficulty": "Easy",
+            "likes": 1160,
+            "dislikes": 564,
+            "isLiked": null,
+            "similarQuestions": "[]",
+            "exampleTestcases": "{\"headers\": {\"Employee\": [\"Id\", \"Salary\"]}, \"rows\": {\"Employee\": [[1, 100], [2, 200], [3, 300]]}}",
+            "contributors": [],
+            "topicTags": [],
+            "companyTagStats": null,
+            "codeSnippets": [
+                {
+                    "lang": "MySQL",
+                    "langSlug": "mysql",
+                    "code": "# Write your MySQL query statement below\n",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "MS SQL Server",
+                    "langSlug": "mssql",
+                    "code": "/* Write your T-SQL query statement below */\n",
+                    "__typename": "CodeSnippetNode"
+                },
+                {
+                    "lang": "Oracle",
+                    "langSlug": "oraclesql",
+                    "code": "/* Write your PL/SQL query statement below */\n",
+                    "__typename": "CodeSnippetNode"
+                }
+            ],
+            "stats": "{\"totalAccepted\": \"332.2K\", \"totalSubmission\": \"984.3K\", \"totalAcceptedRaw\": 332242, \"totalSubmissionRaw\": 984294, \"acRate\": \"33.8%\"}",
+            "hints": [],
+            "solution": {
+                "id": "217",
+                "canSeeDetail": true,
+                "paidOnly": false,
+                "hasVideoSolution": false,
+                "paidOnlyVideo": true,
+                "__typename": "ArticleNode"
+            },
+            "status": null,
+            "sampleTestCase": "{\"headers\": {\"Employee\": [\"Id\", \"Salary\"]}, \"rows\": {\"Employee\": [[1, 100], [2, 200], [3, 300]]}}",
+            "metaData": "{\n  \"mysql\": [\n    \"Create table If Not Exists Employee (Id int, Salary int)\"\n  ],\n  \"mssql\": [\n    \"create table Employee ( Id int, Salary int )\"\n  ],\n  \"oraclesql\": [\n    \"create table Employee ( Id int, Salary int )\"\n  ],\n  \"database\": true\n}",
+            "judgerAvailable": true,
+            "judgeType": "large",
+            "mysqlSchemas": [
+                "Create table If Not Exists Employee (Id int, Salary int)",
+                "Truncate table Employee",
+                "insert into Employee (Id, Salary) values ('1', '100')",
+                "insert into Employee (Id, Salary) values ('2', '200')",
+                "insert into Employee (Id, Salary) values ('3', '300')"
+            ],
+            "enableRunCode": true,
+            "enableTestMode": false,
+            "enableDebugger": false,
+            "envInfo": "{\"mysql\": [\"MySQL\", \"<p><code>MySQL 8.0</code>.</p>\"], \"mssql\": [\"MS SQL Server\", \"<p><code>mssql server 2019</code>.</p>\"], \"oraclesql\": [\"Oracle\", \"<p><code>Oracle Sql 11.2</code>.</p>\"]}",
+            "libraryUrl": null,
+            "adminUrl": null,
+            "__typename": "QuestionNode"
+        }
+    }
+}
